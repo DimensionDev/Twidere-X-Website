@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) =>
             },
         },
         main: {
-            background: `url('/pattern.png')`,
+            background: `url('pattern.png')`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'top center',
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) =>
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            background: `url('/pattern-mobile.png')`,
+            background: `url('pattern-mobile.png')`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'top center',
@@ -170,18 +170,18 @@ const useStyles = makeStyles((theme) =>
             },
         },
         fDroid: {
-            backgroundImage: `url('/f-droid.png')`,
+            backgroundImage: `url('f-droid.png')`,
         },
         gPlay: {
-            backgroundImage: `url('/google-play.png')`,
+            backgroundImage: `url('google-play.png')`,
             marginRight: '0.5rem',
         },
         appStore: {
-            backgroundImage: `url('/app-store.png')`,
+            backgroundImage: `url('app-store.png')`,
             backgroundPosition: 'top left',
         },
         github: {
-            backgroundImage: `url('/github.png')`,
+            backgroundImage: `url('github.png')`,
         },
         featureTitle: {
             fontWeight: 600,
