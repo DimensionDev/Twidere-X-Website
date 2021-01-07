@@ -5,14 +5,60 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+
+    <!-- For Google -->
+    <meta name="description" content="A pure Twitter experience back like the good old days." />
+    <meta name="keywords" content="No ads, Free, Mask Network" />
+    <meta name="author" content="Mask Network" />
+    <meta name="application-name" content="Twiderre X" />
+
+    <!-- For Facebook -->
     <meta property="og:url" content="https://x.twidere.com/"/>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Twiderre X" />
     <meta property="og:image" content="https://x.twidere.com/pattern.png" />
+    <meta property="og:description" content="A pure Twitter experience back like the good old days." />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Twiderre X" />
+    <meta name="twitter:description" content="A pure Twitter experience back like the good old days." />
+    <meta name="twitter:image" content="https://x.twidere.com/pattern.png" />
+
+    <!-- For Android -->
+    <meta name="google-play-app" content="app-id=com.twidere.twiderex">
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "url": "https://x.twidere.com",
+        "logo": "https://x.twidere.com/favicon.svg"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Twiderre X",
+        "operatingSystem": "Android",
+        "applicationCategory": "SecurityApplication",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
