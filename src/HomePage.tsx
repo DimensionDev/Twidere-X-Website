@@ -320,7 +320,13 @@ function HomePage({ t }: { t: TFunction }) {
                         <>
                             <Typography className="cursor-pointer">{t('link_home')}</Typography>
                             <div className="mr-8" />
-                            <Typography className="cursor-pointer">{t('link_blog')}</Typography>
+                            <Typography
+                                className="cursor-pointer"
+                                onClick={() =>
+                                    window.open('https://blog.twidere.com/', '_blank', 'noopener noreferrer')
+                                }>
+                                {t('link_blog')}
+                            </Typography>
                         </>
                     )}
                 </section>
@@ -363,7 +369,7 @@ function HomePage({ t }: { t: TFunction }) {
                         {t('banner_intro')}
                     </Typography>
                     <Box className={'flex flex-col mb-4 self-start ' + classes.downloadWrapper}>
-                        <a className={'mb-4 ' + classNames([classes.fDroid, classes.download])} />
+                        {/* <a className={'mb-4 ' + classNames([classes.fDroid, classes.download])} /> */}
                         <a
                             className={'mb-4 ' + classNames([classes.gPlay, classes.download])}
                             href="https://play.google.com/store/apps/details?id=com.twidere.twiderex"
@@ -386,7 +392,7 @@ function HomePage({ t }: { t: TFunction }) {
                             {t('banner_intro')}
                         </Typography>
                         <Box className={'flex mb-4 ' + classes.downloadWrapper}>
-                            <a className={classNames([classes.fDroid, classes.download])} />
+                            {/* <a className={classNames([classes.fDroid, classes.download])} /> */}
                             <a
                                 className={classNames([classes.gPlay, classes.download])}
                                 href="https://play.google.com/store/apps/details?id=com.twidere.twiderex"
