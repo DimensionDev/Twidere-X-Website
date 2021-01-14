@@ -287,8 +287,7 @@ function HomePage({ t }: { t: TFunction }) {
 
     useEffect(() => {
         const lang = window.localStorage.getItem('twidere_language')
-        console.log(lang, 'twidere_language')
-        setTimeout(() => i18n.changeLanguage(lang ? lang : 'zh'), 0)
+        setTimeout(() => i18n.changeLanguage(lang ? lang : navigator.language), 0)
     }, [])
 
     return (
@@ -479,7 +478,10 @@ function HomePage({ t }: { t: TFunction }) {
                         {t('more_within_blog')}
                     </Typography>
                     {xsMatched ? null : (
-                        <Button className={classes.futureButton} variant="contained">
+                        <Button
+                            className={classes.futureButton}
+                            variant="contained"
+                            onClick={() => window.open('https://blog.twidere.com/', '_blank', 'noopener noreferrer')}>
                             {t('link_view_blog')}
                         </Button>
                     )}
@@ -490,7 +492,10 @@ function HomePage({ t }: { t: TFunction }) {
                         height={screenWidth > 407 * 0.8 ? 356 * 0.8 : (356 * screenWidth) / (407 * 0.8)}
                     />
                     {xsMatched ? (
-                        <Button className={classes.futureButton} variant="contained">
+                        <Button
+                            className={classes.futureButton}
+                            variant="contained"
+                            onClick={() => window.open('https://blog.twidere.com/', '_blank', 'noopener noreferrer')}>
                             {t('link_view_blog')}
                         </Button>
                     ) : null}
