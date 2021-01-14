@@ -2,7 +2,16 @@
     "short_name": "Twiderre X",
     "name": "Twiderre X",
     "description": "A pure Twitter experience back like the good old days.",
-    "icons": [],
+    "icons": [
+        {
+            "src": "https://x.twidere.com/thumbnail.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://x.twidere.com/thumbnail512.png",
+            "sizes": "512x512"
+        }
+    ],
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
