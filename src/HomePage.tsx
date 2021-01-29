@@ -286,8 +286,13 @@ function HomePage({ t }: { t: TFunction }) {
     const classes = useStyles({ screenWidth })
 
     useEffect(() => {
-        const lang = window.localStorage.getItem('twidere_language')
-        setTimeout(() => i18n.changeLanguage(lang ? lang : navigator.language), 0)
+        const localStorageLang = window.localStorage.getItem('twidere_language')
+        const lang = localStorageLang
+            ? localStorageLang
+            : ['zh', 'en'].includes(navigator.language)
+            ? navigator.language
+            : 'en'
+        setTimeout(() => i18n.changeLanguage(lang), 0)
     }, [])
 
     return (
